@@ -1,0 +1,11 @@
+version: "2"
+services:
+  aglio-drakov:
+    image: registry.cn-beijing.aliyuncs.com/com_ddicar/aapi-mock-server
+    ports:
+      - "3000:3000"
+      - "3001:3001"
+    environment:
+      BLUEPRINT_TOOLS_DOC_INDEX: api.apib
+      BLUEPRINT_TOOLS_THEME_TEMPLATE: triple
+      BLUEPRINT_TOOLS_THEME_VARIABLES: slate
